@@ -166,8 +166,7 @@
     (#make-range! "loop.inner" @_start @_end))) @loop.outer
 
 ; blocks
-(_
-  (block) @block.inner) @block.outer
+(block (_) @block.inner) @block.outer
 
 (unsafe_block
   (_)? @block.inner) @block.outer
